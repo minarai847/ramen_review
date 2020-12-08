@@ -6,11 +6,13 @@
           <br>
           <div class="columns is-centered">
             <div class="column is-3">
+            <% unless user_signed_in?%>
               <%= link_to "ログイン", new_user_session_path, class: "button is-fullwidth" %>
               <br>
               <%= link_to "新規登録", new_user_registration_path, class: "button is-fullwidth" %>
             </div>
           </div>
+          <% end %>
       </div>
     </div>
   </div>
