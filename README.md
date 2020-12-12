@@ -14,7 +14,7 @@ RAMEN_REVIEW
 # DEMO
 #### トップページ
 <p align="center">
-  <img src="https://gyazo.com/b82bf46e75a78bc7b325304d4367ec72" width=70%><br>
+  <img src="https://user-images.githubusercontent.com/72494683/101971196-eae8dd80-3c72-11eb-8c51-76e91927c681.png" width=70%><br>
 </p>
 
 #### 新規登録画面
@@ -32,13 +32,13 @@ RAMEN_REVIEW
 #### レシピ投稿画面
 
 <p align="center">
-<img alt="レシピ投稿画面" src="https://user-images.githubusercontent.com/72494683/100247459-b6400b00-2f7d-11eb-992a-27d323cd544a.png" width=70%><br>
+<img alt="レシピ投稿画面" src="https://user-images.githubusercontent.com/72494683/100247459-b6400b00-2f7d-11eb-992a-27d323cd544a.png" width=70%><br>
 </p>
 
 #### レシピ編集
 
 <p align="center">
-<img alt="レシピ編集" src="https://user-images.githubusercontent.com/72494683/100244916-d15d4b80-2f7a-11eb-851e-5ad1c53cfef5.png" width=70%><br>
+<img alt="レシピ編集" src="https://user-images.githubusercontent.com/72494683/100244916-d15d4b80-2f7a-11eb-851e-5ad1c53cfef5.png" width=70%><br>
 </p>
 
 #### コメント、返信機能
@@ -51,7 +51,7 @@ RAMEN_REVIEW
 
 <p align="center">
   
-![レシピ詳細ページ](https://user-images.githubusercontent.com/72494683/100253014-f0141000-2f83-11eb-9fc8-2c8a59b3942e.gif)
+![レシピ詳細ページ](https://user-images.githubusercontent.com/72494683/100253014-f0141000-2f83-11eb-9fc8-2c8a59b3942e.gif)
   
  </p> 
  
