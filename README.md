@@ -20,13 +20,13 @@ RAMEN_REVIEW
 #### 新規登録画面
 
 <p align="center">
-<img alt="新規登録画面" src="https://user-images.githubusercontent.com/72494683/100248114-6e6db380-2f7e-11eb-9120-aa02ccafe6a3.png" width=70%><br>
+<img alt="新規登録画面" src="" width=70%><br>
 </p>
 
 #### ログイン画面
 
 <p align="center">
-<img alt="roguinn" src="https://user-images.githubusercontent.com/72494683/100247755-04eda500-2f7e-11eb-8005-40d4db0b2df9.png" width=70%><br>
+<img alt="roguinn" src="" width=70%><br>
 </p>
 
 #### レシピ投稿画面
