@@ -20,54 +20,42 @@ RAMEN_REVIEW
 #### 新規登録画面
 
 <p align="center">
-<img alt="新規登録画面" src="" width=70%><br>
+<img alt="新規登録画面" src="https://user-images.githubusercontent.com/72494683/102001246-1fbc6980-3d33-11eb-8689-8dbb9e9ead86.jpg" width=70%><br>
 </p>
 
 #### ログイン画面
 
 <p align="center">
-<img alt="roguinn" src="" width=70%><br>
+<img alt="ログイン画面" src="https://user-images.githubusercontent.com/72494683/102001262-6e6a0380-3d33-11eb-8d14-8cf8bc659e34.jpg" width=70%><br>
 </p>
 
-#### レシピ投稿画面
+#### ラーメン店一覧
 
 <p align="center">
-<img alt="レシピ投稿画面" src="https://user-images.githubusercontent.com/72494683/100247459-b6400b00-2f7d-11eb-992a-27d323cd544a.png" width=70%><br>
+<img alt="ラーメン店一覧" src="https://gyazo.com/c576d8fcffa5c2c31f32301d80aa1e60" width=70%><br>
 </p>
 
-#### レシピ編集
+#### レビュー投稿
 
 <p align="center">
-<img alt="レシピ編集" src="https://user-images.githubusercontent.com/72494683/100244916-d15d4b80-2f7a-11eb-851e-5ad1c53cfef5.png" width=70%><br>
+<img alt="レビュー投稿" src="https://user-images.githubusercontent.com/72494683/102001317-1ed80780-3d34-11eb-838b-550d304f0cce.jpg" width=70%><br>
 </p>
 
-#### コメント、返信機能
+#### レビュー一覧
 
 <p align="center">
-<img alt="コメント、返信機能" src="https://user-images.githubusercontent.com/72494683/100247176-64978080-2f7d-11eb-9439-6a08d0ea9565.png" width=70%><br>
+<img alt="レビュー一覧" src="https://user-images.githubusercontent.com/72494683/102001328-4dee7900-3d34-11eb-9b9b-fea8ed301716.jpg" width=70%><br>
   </p>
-  
-#### レシピ詳細ページ
-
-<p align="center">
-  
-![レシピ詳細ページ](https://user-images.githubusercontent.com/72494683/100253014-f0141000-2f83-11eb-9fc8-2c8a59b3942e.gif)
-  
- </p> 
- 
-#### いいね機能
-
-![いいね機能](https://user-images.githubusercontent.com/72494683/100253157-1c2f9100-2f84-11eb-9433-ccaa656ccbbc.gif)<br>
 
 # 工夫したポイント
-気に入ったレシピに対してのいいね機能を、コメントに対しての返信機能は付けたてレシピを投稿した人、そのレシピを参考に作ってみた方との間をなるべく近くして、シェアということがしやすいようにしたいと思い実装したことが工夫した点になります。<br>
-<br>また、背景色が単色であったりすると味気がない上に、少しでもアクセスしたときに好感を持ってもらい、またアクセスしてもらえるようにトップページのレイアウトには力を入れ、工夫をしました。<br>
+今までデータを投稿し、保管していましたが今回は元々データを存在させておくやり方を実践してみました。<br>
+またレビューの星の部分をjavascriptで実装し、レビューの平均値を出すやり方も実装することができました。
 ## 使用した技術（開発環境）
 HTML・CSS・Ruby・Ruby on Rails・JavaScript・GitHub 
 
 ## 課題や今後実装したい機能
-課題は、返信機能がついてはいるのですが見にくかったり、実用的ではないため改良が必要だと感じています。<br>
-<br>今後実装したい機能としては、検索機能やSNSとの連携ができるようにしてレシピの検索がしやすくなるように改良したり、新規登録時にSNSのアカウントで簡単に登録ができるようにして、より使いやすいように改良が必要だと思っています。<br>
+レビューするサイトとしては少し味気ない感じなので、写真なども加えてより見やすくする必要があると感じています。<br>
+<br>今後実装したい機能としては、google mapのAPIを導入することでより使いやすくなると感じている。<br>
 
 # テーブル設計
 ## users テーブル
@@ -79,46 +67,35 @@ HTML・CSS・Ruby・Ruby on Rails・JavaScript・GitHub
 | password | string | null: false |
 ### Association
 
-- has_many :recipes
-- has_many :comments
-- has_many :goods
+- has_many :reviews
+- has_many :ramen_shops
 
-## recipe テーブル
+## reviews テーブル
 
-| Column   | Type    | Options     |
-| ------   | ------  | ----------- |
-| title    | string  | null: false |
-|user_id   |reference| null:false  |
-|body      |text     | null:false  |
-
-
-### Association
-
-- belongs_to: user
-- has_many :comments
-- has_many :goods
-
-## comments テーブル
-
-| Column   | Type    | Options     |
-| ------   | ------  | ----------- |
-| text     | text    | null: false |
-|recipe_id |reference|             |
-|user_id   |reference|             |
+| Column      | Type    | Options     |
+| ------      | ------  | ----------- |
+| user_id     |reference| null: false |
+|ramen_shop_id|reference| null:false  |
+|content      |string   | null:false  |
+|score        |integer  | null:false  |
 
 
 ### Association
 
 - belongs_to: user
-- belongs_to: recipe
+- belongs_to: ramen_shop
 
-
-## goods テーブル
+## ramen_shops テーブル
 
 | Column   | Type    | Options     |
 | ------   | ------  | ----------- |
-| user_id  |reference|             |
-|recipe_id |reference|             |         
+| name     | string  | null: false |
+
+
 
 ### Association
+
 - belongs_to: user
+- has_many: reviews
+
+
