@@ -32,7 +32,7 @@ RAMEN_REVIEW
 #### ラーメン店一覧
 
 <p align="center">
-<img alt="ラーメン店一覧" src="https://gyazo.com/c576d8fcffa5c2c31f32301d80aa1e60" width=70%><br>
+<img alt="ラーメン店一覧" src="https://user-images.githubusercontent.com/72494683/102001749-d1aa6480-3d38-11eb-9a4b-99a0ef3728e1.png" width=70%><br>
 </p>
 
 #### レビュー投稿
